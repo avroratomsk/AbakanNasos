@@ -1,0 +1,39 @@
+.form-search {
+  height: 33px;
+  display: flex;
+  border: 1px solid rgba(40, 101, 168, 1);
+  border-radius: 30px;
+  overflow: hidden;
+
+
+
+  //.form-search__btn
+  &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 100%;
+  }
+
+  //.form-search__input
+  &__input{
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(81, 81, 81, 1);
+
+    &::placeholder {
+      color: rgb(111, 111, 111);
+    }
+
+    @media screen and (max-width: 578px) {
+      display: none;
+    }
+
+  }
+
+
+
+}
