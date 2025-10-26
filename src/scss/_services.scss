@@ -1,0 +1,33 @@
+.services {
+
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  &__item {
+    position: relative;
+    min-height: 208px;
+    padding: 18px;
+    border-radius: 20px;
+    background: linear-gradient(180.00deg, rgba(1, 112, 184, 1), rgba(0.44565218687057495, 49.913047790527344, 82, 0.2) 100%);
+    overflow: hidden;
+  }
+
+  &__title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+    transform: rotate(21deg);
+  }
+
+
+}

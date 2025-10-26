@@ -1,0 +1,55 @@
+.callback {
+  position: relative;
+  padding: 50px 0;
+  background: linear-gradient(180.00deg, rgba(1, 112, 184, 1), rgba(0.44565218687057495, 49.913047790527344, 82, 1) 100%);
+  overflow: hidden;
+  color: #ffffff;
+
+  &__pattern {
+    position: absolute;
+    top: -80%;
+    left: -20%;
+    z-index: 0;
+  }
+
+  &__row {
+    display: flex;
+    gap: 134px;
+    height: 100%;
+
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 50%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 107px;
+    }
+
+  }
+
+  &__logo {
+    justify-self: flex-end;
+  }
+
+  &__form {
+    min-width: 622px;
+    flex: 1 1 50%;
+    position: relative;
+    z-index: 1;
+  }
+
+
+}

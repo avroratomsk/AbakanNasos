@@ -6,9 +6,8 @@
   overflow: hidden;
 
 
-
   //.form-search__btn
-  &__btn{
+  &__btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +16,7 @@
   }
 
   //.form-search__input
-  &__input{
+  &__input {
     border: none;
     background: none;
     font-size: 14px;
@@ -34,6 +33,76 @@
 
   }
 
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+
+    &::placeholder {
+      color: rgba(128, 128, 128, 1);
+    }
+  }
+
+  &__textarea {
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+  }
+
+  &__submit {
+    border-radius: 40px;
+    background: rgba(1, 112, 184, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 70px;
+    white-space: nowrap;
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__action {
+
+  }
+
+  &__action-social {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 10px;
+  }
+
+  &__action-phone {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  &__pivacy {
+    label {
+      font-size: 14px;
+    }
+  }
 
 
 }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head lang="ru">
+<head lang="ru">
   <meta charset="UTF-8"/>
   <meta
       http-equiv="X-UA-Compatible"
@@ -12,14 +12,19 @@
   />
   <title>Сборка GULP</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20251010125257"
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css?_v=20251026172521"
+  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20251026172521"
         rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20251010125257"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20251026172521"/>
 
   <link
       rel="stylesheet"
-      href="css/style.min.css?_v=20251010125257"
+      href="css/style.min.css?_v=20251026172521"
   />
 
   <!-- https://realfavicongenerator.net -->
@@ -53,8 +58,8 @@
   />
 </head>
 
-    <body>
-        <div class="header">
+<body>
+<div class="header">
   <div class="container">
     <div class="header__top">
       <a href="/" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a>
@@ -100,18 +105,171 @@
 </div>
 
 
-        <main>
-            <div class="container">
-    <h2>Пример подключения файла</h2>
-    <p>1 - При подключении картинок вместо полного пути указываем <code>@img/</code> и он сам заменит на нужный путь</p>
-    <p>2 - При добавлении/удалении файлов шрифтов - удаляем файл <code>src/scss/fonts.scss</code> и GULP подключит все учитывая изменения</p>
-</div>
-        </main>
+<main>
+  <section class="hero">
+  <div class="container">
+    <div class="swiper hero__slider">
+      <div class="swiper-wrapper hero__wrapper">
+        <div class="swiper-slide hero__slide">
+          <h1>Распродажа вертикальных многоступенчатых насосов CDL</h1>
+          <p>
+            Сейчас насосы Ensi QB доступны по специальной цене, поэтому это отличная возможность приобрести надежное
+            оборудование с выгодой. Насосы серии QB от бренда Ensi — это надежное решение для тех, кто ценит качество и
+            удобство в использовании.
+          </p>
+          <picture><source srcset="img/hero__image.webp" type="image/webp"><img src="img/hero__image.png" alt="" class="hero__image"></picture>
+          <button type="button" class="hero__btn">Посмотреть товары</button>
+        </div>
+        <div class="swiper-slide hero__slide">
+          <h1>Распродажа вертикальных многоступенчатых насосов CDL</h1>
+          <p>
+            Сейчас насосы Ensi QB доступны по специальной цене, поэтому это отличная возможность приобрести надежное
+            оборудование с выгодой. Насосы серии QB от бренда Ensi — это надежное решение для тех, кто ценит качество и
+            удобство в использовании.
+          </p>
+          <picture><source srcset="img/hero__image.webp" type="image/webp"><img src="img/hero__image.png" alt="" class="hero__image"></picture>
+          <button type="button" class="hero__btn">Посмотреть товары</button>
+        </div>
+      </div>
+      <div class="hero__arrows">
+        <div class="swiper-button-prev hero__arrow-prev"></div>
+        <div class="swiper-button-next hero__arrow-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="footer">
+  <section class="services py">
+    <div class="container">
+      <div class="services__grid">
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="callback my">
+    <picture><source srcset="img/pattern.webp" type="image/webp"><img src="img/pattern.png" alt="" class="callback__pattern"></picture>
+    <div class="container">
+      <div class="callback__row">
+        <div class="callback__info">
+          <h2>Оставьте заявку и вас проконсультируют наши специалисты</h2>
+          <p>
+            Наши менеджеры ответят на любой интересующий вас вопрос по поводу нашей продукции, подберем насос
+            подходящий под вашу задачу!
+          </p>
+          <div class="callback__logo">
+            <picture><source srcset="img/callback-logo.webp" type="image/webp"><img src="img/callback-logo.png" alt=""></picture>
+          </div>
+        </div>
+        <div class="callback__form">
+          <form action="" class="form">
+            <input type="text" class="form__input" placeholder="Имя" name="name">
+            <input type="tel" class="form__input" placeholder="Номер телефона" name="phone">
+            <textarea name="message" placeholder="Ваш вопрос" rows="5" class="form__textarea"></textarea>
+            <div class="form__bottom">
+              <div class="form__action">
+                <button type="submit" class="form__submit">Оставить заявку</button>
+                <div class="form__action-social">
+                  <div class="social">
+                    <a href=""><picture><source srcset="img/white-tg.webp" type="image/webp"><img src="img/white-tg.png" alt=""></picture></a>
+                    <a href=""><picture><source srcset="img/white-wh.webp" type="image/webp"><img src="img/white-wh.png" alt=""></picture></a>
+                    <a href=""><picture><source srcset="img/white-vk.webp" type="image/webp"><img src="img/white-vk.png" alt=""></picture></a>
+                  </div>
+                  <a href="tel:+79966377682" class="form__action-phone">+7 (996) 637-76-82</a>
+                </div>
+              </div>
+
+              <div class="form__pivacy">
+                <input type="checkbox" id="agree" class="form__checkbox">
+                <label for="agree">
+                  Я даю свое согласие на обработку персональных данных и подверждаю, что ознакомлен(а)
+                  с политикой конфиденциальности и обработки персональных данных
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="footer">
     <div class="container"><h3>Вот это подвал</h3></div>
 </div>
 
-        <script src="js/app.min.js?_v=20251010125257"></script>
-    </body>
+<script src="js/app.min.js?_v=20251026172521"></script>
+</body>
 </html>

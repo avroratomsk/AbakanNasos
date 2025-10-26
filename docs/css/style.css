@@ -1543,6 +1543,14 @@ ol {
   gap: 12px;
 }
 
+.py {
+  padding: 30px 0;
+}
+
+.my {
+  margin: 30px 0;
+}
+
 .form-search {
   height: 33px;
   display: -webkit-box;
@@ -1595,6 +1603,284 @@ ol {
   color: rgb(111, 111, 111);
 }
 
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: rgb(128, 128, 128);
+}
+
+.form__input::-moz-placeholder {
+  color: rgb(128, 128, 128);
+}
+
+.form__input:-ms-input-placeholder {
+  color: rgb(128, 128, 128);
+}
+
+.form__input::-ms-input-placeholder {
+  color: rgb(128, 128, 128);
+}
+
+.form__input::placeholder {
+  color: rgb(128, 128, 128);
+}
+
+.form__textarea {
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+}
+
+.form__submit {
+  border-radius: 40px;
+  background: rgb(1, 112, 184);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 70px;
+  white-space: nowrap;
+}
+
+.form__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.form__action-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.form__action-phone {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.form__pivacy label {
+  font-size: 14px;
+}
+
+.hero__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  position: relative;
+  min-height: 400px;
+  padding: 30px 40px;
+  border-radius: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(1, 112, 184)), to(rgb(0, 50, 82)));
+  background: linear-gradient(180deg, rgb(1, 112, 184), rgb(0, 50, 82) 100%);
+}
+
+.hero__slide h1,
+.hero__slide h2,
+.hero__slide h3,
+.hero__slide h4,
+.hero__slide h5,
+.hero__slide h6 {
+  color: rgb(255, 255, 255);
+  line-height: 120%;
+  max-width: 700px;
+}
+
+.hero__slide p {
+  max-width: 468px;
+  line-height: 150%;
+  color: rgb(255, 255, 255);
+}
+
+.hero__image {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  z-index: -1;
+}
+
+.hero__btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 15px 18px;
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 101, 134, 0.87)), to(rgb(10, 120, 240)));
+  background: linear-gradient(180deg, rgba(51, 101, 134, 0.87), rgb(10, 120, 240) 100%);
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.hero__arrows {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.hero__arrow-next,
+.hero__arrow-prev {
+  position: relative;
+  margin: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgb(0, 50, 82);
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(11, 108, 170)), to(rgb(100, 189, 246)));
+  background: linear-gradient(180deg, rgb(11, 108, 170), rgb(100, 189, 246) 100%);
+  color: #ffffff;
+}
+
+.hero__arrow-next svg,
+.hero__arrow-prev svg {
+  width: 11px;
+  height: 20px;
+}
+
+.hero .swiper-button-disabled {
+  background: rgb(0, 50, 82);
+}
+
+.services__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.services__item {
+  position: relative;
+  min-height: 208px;
+  padding: 18px;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(1, 112, 184)), to(rgba(0, 50, 82, 0.2)));
+  background: linear-gradient(180deg, rgb(1, 112, 184), rgba(0, 50, 82, 0.2) 100%);
+  overflow: hidden;
+}
+
+.services__title {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.services__image {
+  position: absolute;
+  bottom: -20px;
+  right: -10px;
+  -webkit-transform: rotate(21deg);
+      -ms-transform: rotate(21deg);
+          transform: rotate(21deg);
+}
+
+.callback {
+  position: relative;
+  padding: 50px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(1, 112, 184)), to(rgb(0, 50, 82)));
+  background: linear-gradient(180deg, rgb(1, 112, 184), rgb(0, 50, 82) 100%);
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.callback__pattern {
+  position: absolute;
+  top: -80%;
+  left: -20%;
+  z-index: 0;
+}
+
+.callback__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 134px;
+  height: 100%;
+}
+
+.callback__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.callback__info h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.callback__info p {
+  margin-bottom: 107px;
+}
+
+.callback__logo {
+  justify-self: flex-end;
+}
+
+.callback__form {
+  min-width: 622px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  position: relative;
+  z-index: 1;
+}
+
 * {
   outline: none;
   -webkit-box-sizing: border-box;
@@ -1618,7 +1904,7 @@ body {
   height: 100%;
   min-width: 360px;
   overflow-x: hidden;
-  font-family: HelveticaRegular;
+  font-family: "Montserrat", sans-serif;
 }
 
 body main {
