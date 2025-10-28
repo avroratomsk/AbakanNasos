@@ -20,3 +20,19 @@ const heroSlider = new Swiper('.hero__slider', {
     el: '.swiper-scrollbar',
   },
 });
+
+const clientsSlider = new Swiper('.clients__slider', {
+  modules: [Navigation, Scrollbar],
+  direction: 'horizontal',
+  slidesPerView: 4.5,
+  spaceBetween: 20,
+
+  navigation: {
+    nextEl: '',
+    prevEl: '',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});

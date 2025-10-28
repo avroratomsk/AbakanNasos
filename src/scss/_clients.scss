@@ -1,0 +1,28 @@
+.clients {
+
+  .container {
+    border-top: 1px solid rgba(40, 101, 168, 0.29);
+  }
+
+  &__title {
+    margin: 20px 50px;
+  }
+
+  &__slider {
+  }
+
+  &__wrapper {}
+
+  &__slide {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(1, 112, 184, 0.22);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 1);
+  }
+
+
+}
