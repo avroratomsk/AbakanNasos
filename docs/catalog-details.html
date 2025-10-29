@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta charset="UTF-8"/>
+  <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+  />
+  <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+  />
+  <title>Каталог</title>
+
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css?_v=20251029121916"
+  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20251029121916"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20251029121916"/>
+
+  <link
+      rel="stylesheet"
+      href="css/style.min.css?_v=20251029121916"
+  />
+
+  <!-- https://realfavicongenerator.net -->
+  <link
+      rel="icon"
+      type="image/png"
+      href="/img/favicon/favicon-96x96.png"
+      sizes="96x96"
+  />
+  <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/img/favicon/favicon.svg"
+  />
+  <link
+      rel="shortcut icon"
+      href="/favicon.ico"
+  />
+  <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+  />
+  <meta
+      name="apple-mobile-web-app-title"
+      content="Ometov Gulp"
+  />
+  <link
+      rel="manifest"
+      href="/img/favicon/site.webmanifest"
+  />
+</head>
+
+<body>
+<div class="header">
+  <div class="container">
+    <div class="header__top">
+      <a href="/" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a>
+      <form action="" class="form-search">
+        <button type="submit" class="form-search__btn"><img src="img/search.svg" alt=""></button>
+        <input type="search" class="form-search__input" id="search" name="search" placeholder="Поиск">
+      </form>
+      <div class="header__info">
+        <div class="header__info-inner">
+          <p class="header__address address">г. Томск,Нечевский переулок, 32/1</p>
+          <a href="tel:+73822431552" class="header__phone phone">+7 (3822) 43-15-52</a>
+          <a href="tel:+79966377682" class="header__phone phone">+7 (996) 637-76-82</a>
+          <a href="mailto:mail@tompc.ru" class="header__mail mail">mail@tompc.ru</a>
+        </div>
+        <div class="header__info-inner">
+          <p class="header__address address">г. Томск,ул. Пролетарская 33/2</p>
+          <a href="tel:+73822400018" class="header__phone phone">+7 (3822) 40-00-18</a>
+          <a href="tel:+79039535237" class="header__phone phone">+7 (903) 953-52-37</a>
+          <a href="mailto:pumps@tompc.ru" class="header__mail mail">pumps@tompc.ru</a>
+        </div>
+      </div>
+      <div class="header__social social">
+        <a href=""><img src="img/tg.svg" alt=""></a>
+        <a href=""><img src="img/wh.svg" alt=""></a>
+        <a href=""><img src="img/vk.svg" alt=""></a>
+      </div>
+      <button type="button" class="header__burger" id="burger">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+    <nav class="header__nav nav">
+      <button class="nav__close" id="close"><i class="fa-solid fa-xmark"></i></button>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="" class="nav__link nav__link--first">Каталог</a></li>
+        <li class="nav__item"><a href="" class="nav__link">О нас</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Галерея</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Новости</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+      </ul>
+      <a href="" class="header__btn">Распродажа</a>
+    </nav>
+  </div>
+</div>
+
+
+<main>
+
+  <div class="top-page">
+    <div class="container">
+      <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Главная
+          <meta itemprop="position" content="1"/>
+        </a>
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Каталог
+          <meta itemprop="position" content="2"/>
+        </a>
+        <span itemprop="name" class="breadcrumbs__item">
+            Поверхностные (Садовые) насосы
+            <meta itemprop="position" content="3"/>
+        </span>
+      </div>
+      <h1 class="top-page__title title">Поверхностные (Садовые) насосы</h1>
+    </div>
+  </div>
+
+  <section class="services">
+    <div class="container">
+      <div class="services__grid">
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <picture><source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="" class="services__image"></picture>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py border-t">
+    <div class="container">
+      <div class="section-text text">
+        <h2>Поверхностный насос</h2>
+        <p>
+          это механическое устройство, которое располагается на поверхности и перекачивает воду из неглубоких источников
+          (до 9-10 метров), таких как колодцы, реки, пруды или резервуары. Он используется для бытового водоснабжения,
+          полива, осушения, перекачки из одной емкости в другую и других хозяйственных нужд. В отличие от погружных
+          насосов, поверхностные модели удобны в установке, обслуживании и мобильны, так как находятся снаружи
+          жидкости
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="callback my">
+    <picture><source srcset="img/pattern.webp" type="image/webp"><img src="img/pattern.png" alt="" class="callback__pattern"></picture>
+    <div class="container">
+      <div class="callback__row">
+        <div class="callback__info">
+          <h2>Оставьте заявку и вас проконсультируют наши специалисты</h2>
+          <p>
+            Наши менеджеры ответят на любой интересующий вас вопрос по поводу нашей продукции, подберем насос
+            подходящий под вашу задачу!
+          </p>
+          <div class="callback__logo">
+            <picture><source srcset="img/callback-logo.webp" type="image/webp"><img src="img/callback-logo.png" alt=""></picture>
+          </div>
+        </div>
+        <div class="callback__form">
+          <form action="" class="form">
+            <input type="text" class="form__input" placeholder="Имя" name="name">
+            <input type="tel" class="form__input" placeholder="Номер телефона" name="phone">
+            <textarea name="message" placeholder="Ваш вопрос" rows="5" class="form__textarea"></textarea>
+            <div class="form__bottom">
+              <div class="form__action">
+                <button type="submit" class="form__submit">Оставить заявку</button>
+                <div class="form__action-social">
+                  <div class="social">
+                    <a href=""><picture><source srcset="img/white-tg.webp" type="image/webp"><img src="img/white-tg.png" alt=""></picture></a>
+                    <a href=""><picture><source srcset="img/white-wh.webp" type="image/webp"><img src="img/white-wh.png" alt=""></picture></a>
+                    <a href=""><picture><source srcset="img/white-vk.webp" type="image/webp"><img src="img/white-vk.png" alt=""></picture></a>
+                  </div>
+                  <a href="tel:+79966377682" class="form__action-phone">+7 (996) 637-76-82</a>
+                </div>
+              </div>
+
+              <div class="form__pivacy">
+                <input type="checkbox" id="agree" class="form__checkbox">
+                <label for="agree">
+                  Я даю свое согласие на обработку персональных данных и подверждаю, что ознакомлен(а)
+                  с политикой конфиденциальности и обработки персональных данных
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact py">
+    <div class="container">
+      <h2 class="contact__title title">Контакты</h2>
+      <div class="contact__row">
+        <div class="contact__info">
+          <div class="contact__item">
+            <p class="contact__office">Ensi, офис продаж</p>
+            <p class="contact__address">г. Томск,Нечевский переулок, 32/1</p>
+            <a href="tel:+7 (3822) 43-15-52" class="contact__phone">+7 (3822) 43-15-52</a>
+            <a href="tel:+7 (996) 637-76-82" class="contact__phone">+7 (996) 637-76-82</a>
+            <a href="mailto:mail@tompc.ru" class="contact__mail">mail@tompc.ru</a>
+            <button type="button" class="btn contact__btn">Связаться с филлиалом</button>
+          </div>
+          <div class="contact__item">
+            <p class="contact__office">Ensi, офис продаж</p>
+            <p class="contact__address">г. Томск,Нечевский переулок, 32/1</p>
+            <a href="tel:+7 (3822) 43-15-52" class="contact__phone">+7 (3822) 43-15-52</a>
+            <a href="tel:+7 (996) 637-76-82" class="contact__phone">+7 (996) 637-76-82</a>
+            <a href="mailto:mail@tompc.ru" class="contact__mail">mail@tompc.ru</a>
+            <button type="button" class="btn contact__btn">Связаться с филлиалом</button>
+          </div>
+        </div>
+        <div class="contact__map">
+          <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A3175d5d567fd195d84a64e5b30c8ff8a933040af6b989477e768edc15f912af9&amp;source=constructor"
+              width="100%" height="500" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<div class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li><a href="">Каталог</a></li>
+          <li><a href="">О нас</a></li>
+          <li><a href="">Галлерея</a></li>
+          <li><a href="">Новости</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer__wrp">
+        <div class="footer__social social">
+          <a href=""><picture><source srcset="img/white-tg.webp" type="image/webp"><img src="img/white-tg.png" alt=""></picture></a>
+          <a href=""><picture><source srcset="img/white-wh.webp" type="image/webp"><img src="img/white-wh.png" alt=""></picture></a>
+          <a href=""><picture><source srcset="img/white-vk.webp" type="image/webp"><img src="img/white-vk.png" alt=""></picture></a>
+        </div>
+        <a href="" class="footer__logo"><picture><source srcset="img/callback-logo.webp" type="image/webp"><img src="img/callback-logo.png" alt=""></picture></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="copyright">© 2025 “АбаканНасос”</div>
+      <a href="" class="footer__link">Политика конфиденциальности</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.min.js?_v=20251029121916"></script>
+</body>
+</html>

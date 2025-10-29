@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"Каталог"
+})
+<body>
+@@include('html/_header.html')
+
+<main>
+
+  <div class="top-page">
+    <div class="container">
+      <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Главная
+          <meta itemprop="position" content="1"/>
+        </a>
+        <a href="" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Каталог
+          <meta itemprop="position" content="2"/>
+        </a>
+        <span itemprop="name" class="breadcrumbs__item">
+            Поверхностные (Садовые) насосы
+            <meta itemprop="position" content="3"/>
+        </span>
+      </div>
+      <h1 class="top-page__title title">Поверхностные (Садовые) насосы</h1>
+    </div>
+  </div>
+
+  <section class="services">
+    <div class="container">
+      <div class="services__grid">
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <img src="@img/services.png" alt="" class="services__image">
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <img src="@img/services.png" alt="" class="services__image">
+        </a>
+        <a href="" class="services__item">
+          <p class="services__title">Поверхностные (Садовые) насосы</p>
+          <img src="@img/services.png" alt="" class="services__image">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py border-t">
+    <div class="container">
+      <div class="section-text text">
+        <h2>Поверхностный насос</h2>
+        <p>
+          это механическое устройство, которое располагается на поверхности и перекачивает воду из неглубоких источников
+          (до 9-10 метров), таких как колодцы, реки, пруды или резервуары. Он используется для бытового водоснабжения,
+          полива, осушения, перекачки из одной емкости в другую и других хозяйственных нужд. В отличие от погружных
+          насосов, поверхностные модели удобны в установке, обслуживании и мобильны, так как находятся снаружи
+          жидкости
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="callback my">
+    <img src="@img/pattern.png" alt="" class="callback__pattern">
+    <div class="container">
+      <div class="callback__row">
+        <div class="callback__info">
+          <h2>Оставьте заявку и вас проконсультируют наши специалисты</h2>
+          <p>
+            Наши менеджеры ответят на любой интересующий вас вопрос по поводу нашей продукции, подберем насос
+            подходящий под вашу задачу!
+          </p>
+          <div class="callback__logo">
+            <img src="@img/callback-logo.png" alt="">
+          </div>
+        </div>
+        <div class="callback__form">
+          <form action="" class="form">
+            <input type="text" class="form__input" placeholder="Имя" name="name">
+            <input type="tel" class="form__input" placeholder="Номер телефона" name="phone">
+            <textarea name="message" placeholder="Ваш вопрос" rows="5" class="form__textarea"></textarea>
+            <div class="form__bottom">
+              <div class="form__action">
+                <button type="submit" class="form__submit">Оставить заявку</button>
+                <div class="form__action-social">
+                  <div class="social">
+                    <a href=""><img src="@img/white-tg.png" alt=""></a>
+                    <a href=""><img src="@img/white-wh.png" alt=""></a>
+                    <a href=""><img src="@img/white-vk.png" alt=""></a>
+                  </div>
+                  <a href="tel:+79966377682" class="form__action-phone">+7 (996) 637-76-82</a>
+                </div>
+              </div>
+
+              <div class="form__pivacy">
+                <input type="checkbox" id="agree" class="form__checkbox">
+                <label for="agree">
+                  Я даю свое согласие на обработку персональных данных и подверждаю, что ознакомлен(а)
+                  с политикой конфиденциальности и обработки персональных данных
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact py">
+    <div class="container">
+      <h2 class="contact__title title">Контакты</h2>
+      <div class="contact__row">
+        <div class="contact__info">
+          <div class="contact__item">
+            <p class="contact__office">Ensi, офис продаж</p>
+            <p class="contact__address">г. Томск,Нечевский переулок, 32/1</p>
+            <a href="tel:+7 (3822) 43-15-52" class="contact__phone">+7 (3822) 43-15-52</a>
+            <a href="tel:+7 (996) 637-76-82" class="contact__phone">+7 (996) 637-76-82</a>
+            <a href="mailto:mail@tompc.ru" class="contact__mail">mail@tompc.ru</a>
+            <button type="button" class="btn contact__btn">Связаться с филлиалом</button>
+          </div>
+          <div class="contact__item">
+            <p class="contact__office">Ensi, офис продаж</p>
+            <p class="contact__address">г. Томск,Нечевский переулок, 32/1</p>
+            <a href="tel:+7 (3822) 43-15-52" class="contact__phone">+7 (3822) 43-15-52</a>
+            <a href="tel:+7 (996) 637-76-82" class="contact__phone">+7 (996) 637-76-82</a>
+            <a href="mailto:mail@tompc.ru" class="contact__mail">mail@tompc.ru</a>
+            <button type="button" class="btn contact__btn">Связаться с филлиалом</button>
+          </div>
+        </div>
+        <div class="contact__map">
+          <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A3175d5d567fd195d84a64e5b30c8ff8a933040af6b989477e768edc15f912af9&amp;source=constructor"
+              width="100%" height="500" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+@@include('html/_footer.html')
+
+<script src="js/app.min.js"></script>
+</body>
+</html>

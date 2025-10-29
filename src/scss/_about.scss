@@ -1,0 +1,44 @@
+.about {
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    border: 1px solid rgba(1, 112, 184, 0.4);
+    border-radius: 40px;
+    padding: 20px;
+  }
+
+  &__info {
+    padding: 45px 0 45px 40px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+  }
+
+  &__image {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 30px 20px;
+  }
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 20px;
+  }
+
+  &__logo {
+  }
+
+}
