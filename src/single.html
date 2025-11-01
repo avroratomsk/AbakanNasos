@@ -1,116 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head lang="ru">
-  <meta charset="UTF-8"/>
-  <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-  />
-  <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-  />
-  <title>Страница товара</title>
-
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css?_v=20251101141028"
-  />
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20251101141028"
-        rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css?_v=20251101141028"/>
-
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css?_v=20251101141028"
-  />
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js?_v=20251101141028"></script>
-
-  <link
-      rel="stylesheet"
-      href="css/style.min.css?_v=20251101141028"
-  />
-
-  <!-- https://realfavicongenerator.net -->
-  <link
-      rel="icon"
-      type="image/png"
-      href="/img/favicon/favicon-96x96.png"
-      sizes="96x96"
-  />
-  <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/img/favicon/favicon.svg"
-  />
-  <link
-      rel="shortcut icon"
-      href="/favicon.ico"
-  />
-  <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/img/favicon/apple-touch-icon.png"
-  />
-  <meta
-      name="apple-mobile-web-app-title"
-      content="Ometov Gulp"
-  />
-  <link
-      rel="manifest"
-      href="/img/favicon/site.webmanifest"
-  />
-</head>
-
+@@include('html/head.html', {
+"title":"Страница товара"
+})
 <body>
-<div class="header">
-  <div class="container">
-    <div class="header__top">
-      <a href="/" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a>
-      <form action="" class="form-search">
-        <button type="submit" class="form-search__btn"><img src="img/search.svg" alt=""></button>
-        <input type="search" class="form-search__input" id="search" name="search" placeholder="Поиск">
-      </form>
-      <div class="header__info">
-        <div class="header__info-inner">
-          <p class="header__address address">г. Томск,Нечевский переулок, 32/1</p>
-          <a href="tel:+73822431552" class="header__phone phone">+7 (3822) 43-15-52</a>
-          <a href="tel:+79966377682" class="header__phone phone">+7 (996) 637-76-82</a>
-          <a href="mailto:mail@tompc.ru" class="header__mail mail">mail@tompc.ru</a>
-        </div>
-        <div class="header__info-inner">
-          <p class="header__address address">г. Томск,ул. Пролетарская 33/2</p>
-          <a href="tel:+73822400018" class="header__phone phone">+7 (3822) 40-00-18</a>
-          <a href="tel:+79039535237" class="header__phone phone">+7 (903) 953-52-37</a>
-          <a href="mailto:pumps@tompc.ru" class="header__mail mail">pumps@tompc.ru</a>
-        </div>
-      </div>
-      <div class="header__social social">
-        <a href=""><img src="img/tg.svg" alt=""></a>
-        <a href=""><img src="img/wh.svg" alt=""></a>
-        <a href=""><img src="img/vk.svg" alt=""></a>
-      </div>
-      <button type="button" class="header__burger" id="burger">
-        <i class="fa-solid fa-bars-staggered"></i>
-      </button>
-    </div>
-    <nav class="header__nav nav">
-      <button class="nav__close" id="close"><i class="fa-solid fa-xmark"></i></button>
-      <ul class="nav__list">
-        <li class="nav__item"><a href="" class="nav__link nav__link--first">Каталог</a></li>
-        <li class="nav__item"><a href="" class="nav__link">О нас</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Галерея</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Новости</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
-      </ul>
-      <a href="" class="header__btn">Распродажа</a>
-    </nav>
-  </div>
-</div>
-
+@@include('html/_header.html')
 
 <main>
 
@@ -148,23 +42,23 @@
             <div class="swiper info__slider-thumb">
               <div class="swiper-wrapper">
                 <div class="swiper-slide info__slide-thumb">
-                  <picture><source srcset="img/single.webp" type="image/webp"><img src="img/single.png" alt=""></picture>
+                  <img src="@img/single.png" alt="">
                 </div>
-                <div class="swiper-slide info__slide-thumb"><picture><source srcset="img/single.webp" type="image/webp"><img src="img/single.png" alt=""></picture></div>
-                <div class="swiper-slide info__slide-thumb"><picture><source srcset="img/single.webp" type="image/webp"><img src="img/single.png" alt=""></picture></div>
+                <div class="swiper-slide info__slide-thumb"><img src="@img/single.png" alt=""></div>
+                <div class="swiper-slide info__slide-thumb"><img src="@img/single.png" alt=""></div>
               </div>
             </div>
           </div>
           <div class="swiper info__slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide info__slide">
-                <picture><source srcset="img/single.webp" type="image/webp"><img src="img/single.png" alt=""></picture>
+                <img src="@img/single.png" alt="">
               </div>
               <div class="swiper-slide info__slide">
-                <picture><source srcset="img/single.webp" type="image/webp"><img src="img/single.png" alt=""></picture>
+                <img src="@img/single.png" alt="">
               </div>
               <div class="swiper-slide info__slide">
-                <picture><source srcset="img/single.webp" type="image/webp"><img src="img/single.png" alt=""></picture>
+                <img src="@img/single.png" alt="">
               </div>
             </div>
           </div>
@@ -277,7 +171,7 @@
   </section>
 
   <section class="callback my">
-    <picture><source srcset="img/pattern.webp" type="image/webp"><img src="img/pattern.png" alt="" class="callback__pattern"></picture>
+    <img src="@img/pattern.png" alt="" class="callback__pattern">
     <div class="container">
       <div class="callback__row">
         <div class="callback__info">
@@ -287,7 +181,7 @@
             подходящий под вашу задачу!
           </p>
           <div class="callback__logo">
-            <picture><source srcset="img/callback-logo.webp" type="image/webp"><img src="img/callback-logo.png" alt=""></picture>
+            <img src="@img/callback-logo.png" alt="">
           </div>
         </div>
         <div class="callback__form">
@@ -300,9 +194,9 @@
                 <button type="submit" class="form__submit">Оставить заявку</button>
                 <div class="form__action-social">
                   <div class="social">
-                    <a href=""><picture><source srcset="img/white-tg.webp" type="image/webp"><img src="img/white-tg.png" alt=""></picture></a>
-                    <a href=""><picture><source srcset="img/white-wh.webp" type="image/webp"><img src="img/white-wh.png" alt=""></picture></a>
-                    <a href=""><picture><source srcset="img/white-vk.webp" type="image/webp"><img src="img/white-vk.png" alt=""></picture></a>
+                    <a href=""><img src="@img/white-tg.png" alt=""></a>
+                    <a href=""><img src="@img/white-wh.png" alt=""></a>
+                    <a href=""><img src="@img/white-vk.png" alt=""></a>
                   </div>
                   <a href="tel:+79966377682" class="form__action-phone">+7 (996) 637-76-82</a>
                 </div>
@@ -356,34 +250,8 @@
 
 </main>
 
-<div class="footer">
-  <div class="container">
-    <div class="footer__inner">
-      <nav class="footer__nav">
-        <ul class="footer__nav-list">
-          <li><a href="">Каталог</a></li>
-          <li><a href="">О нас</a></li>
-          <li><a href="">Галлерея</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="footer__wrp">
-        <div class="footer__social social">
-          <a href=""><picture><source srcset="img/white-tg.webp" type="image/webp"><img src="img/white-tg.png" alt=""></picture></a>
-          <a href=""><picture><source srcset="img/white-wh.webp" type="image/webp"><img src="img/white-wh.png" alt=""></picture></a>
-          <a href=""><picture><source srcset="img/white-vk.webp" type="image/webp"><img src="img/white-vk.png" alt=""></picture></a>
-        </div>
-        <a href="" class="footer__logo"><picture><source srcset="img/callback-logo.webp" type="image/webp"><img src="img/callback-logo.png" alt=""></picture></a>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <div class="copyright">© 2025 “АбаканНасос”</div>
-      <a href="" class="footer__link">Политика конфиденциальности</a>
-    </div>
-  </div>
-</div>
+@@include('html/_footer.html')
 
-<script src="js/app.min.js?_v=20251101141028"></script>
+<script src="js/app.min.js"></script>
 </body>
 </html>
