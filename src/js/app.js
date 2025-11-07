@@ -3,11 +3,16 @@ import * as functions from './modules/baseFunctions.js';
 functions.isWebp();
 
 import Swiper from "swiper";
-import {Navigation, Pagination, Scrollbar, Thumbs} from "swiper/modules";
+import {Navigation, Pagination, Scrollbar, Thumbs, EffectFade} from "swiper/modules";
 
 const heroSlider = new Swiper('.hero__slider', {
-    modules: [Navigation, Scrollbar],
+    modules: [Navigation, Scrollbar, EffectFade],
     direction: 'horizontal',
+    effect: 'fade',
+    fade: {
+        crossFade: true,
+    },
+    autoHeight: true,
     slidesPerView: 1,
     spaceBetween: 20,
 
@@ -104,4 +109,14 @@ const infoSlider = new Swiper('.info__slider', {
     //   }
     // }
 
+});
+
+const inputSearch = document.querySelector('.form-search__input');
+
+inputSearch?.addEventListener('focus', (e) => {
+    inputSearch.parentElement.classList.add('focused');
+});
+
+inputSearch?.addEventListener('blur', (e) => {
+    inputSearch.parentElement.classList.remove('focused');
 });

@@ -51,11 +51,17 @@
     font-weight: 500;
     border-radius: 30px;
     background: rgba(212, 17, 21, 1);
+
+    @media (hover: hover) {
+      &:hover {
+        background: #003252;
+      }
+    }
   }
 
 
   //.header__social
-  &__social{
+  &__social {
     @media screen and (max-width: 1200px) {
       position: fixed;
       bottom: 30px;
@@ -111,6 +117,12 @@
     font-size: 16px;
     font-weight: 500;
 
+    @media(hover:hover ) {
+      &:hover {
+        color: #2865a8;
+      }
+    }
+
     &--first {
       @media screen and (min-width: 992px) {
         padding-left: 0;
@@ -123,7 +135,7 @@
   }
 
   //.nav__close
-  &__close{
+  &__close {
     display: flex;
     align-items: center;
     justify-content: center;

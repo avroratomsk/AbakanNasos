@@ -9,6 +9,7 @@
   &__slide {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
     position: relative;
     min-height: 400px;
@@ -20,33 +21,90 @@
       color: rgba(255, 255, 255, 1);
       line-height: 120%;
       max-width: 700px;
+      transition: $animation-speed;
+      transform: translateY(30px);
+      opacity: 0;
     }
 
     p {
       max-width: 468px;
       line-height: 150%;
       color: rgba(255, 255, 255, 1);
+      transition: $animation-speed;
+      transition-delay: .1s;
+      transform: translateY(30px);
+      opacity: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      h1, h2, h3, h4, h5, h6 {
+        font-size: 25px;
+      }
     }
 
   }
 
+
   &__image {
+    max-width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 50px;
     z-index: -1;
+    opacity: 0;
+    transition: $animation-speed;
   }
 
   &__btn {
+    position: relative;
     align-self: flex-end;
     padding: 15px 18px;
     border-radius: 30px;
-    background: linear-gradient(180.00deg, rgba(51.396080017089844, 101.27555084228516, 133.6298065185547, 0.87), rgba(10.397096633911133, 119.95471954345703, 240.28846740722656, 1) 100%);
+    background: linear-gradient(180deg, rgba(51, 101, 133, 0.87), rgba(10, 119, 240, 1) 100%);
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(0);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(51, 101, 133, 1), rgba(10, 119, 240, 1) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+
+    @media (hover: hover) {
+      &:hover::before {
+        opacity: 1;
+      }
+    }
   }
 
-  &__arrows{
+  .swiper-slide-active {
+    h1, h2, h3, h4, h5, h6, p {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .hero__image,  {
+      opacity: 1;
+    }
+
+    .hero__btn {
+      opacity: 1;
+      transform: translateY(-30px);
+    }
+  }
+
+  &__arrows {
     position: absolute;
     bottom: 30px;
     left: 40px;

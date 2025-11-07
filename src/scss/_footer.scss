@@ -1,5 +1,4 @@
 .footer {
-  margin-top: 60px;
   flex: 0 0 auto;
   background: linear-gradient(180.00deg, rgba(40, 101, 168, 1),rgba(15.714286804199219, 39.67857360839844, 66, 1) 100%);
   border-radius: 40px 40px 0 0;
@@ -24,12 +23,19 @@
     display: flex;
     align-items: center;
     gap: 40px;
+    flex-wrap: wrap;
 
     li {
 
 
       a {
         color: #ffffff;
+
+        @media(hover:hover ) {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
 
 
@@ -66,6 +72,13 @@
     font-size: 13px;
     text-decoration: underline;
     color: rgba(255, 255, 255, 0.67);
+
+    @media (hover:hover) {
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+
   }
 
 }

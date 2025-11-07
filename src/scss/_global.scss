@@ -7,6 +7,18 @@
 button {
   border: none;
   background: none;
+  cursor: pointer;
+  transition: all $animation_speed;
+
+  &:active {
+    opacity: .9;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color:  #357fd1;
+    }
+  }
 }
 
 img {
@@ -15,6 +27,11 @@ img {
 
 a {
   text-decoration: none;
+  transition: all $animation_speed;
+
+  &:active {
+    opacity: .9;
+  }
 }
 
 ul, ol {
@@ -53,6 +70,14 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   align-items: center;
   gap: 12px;
+
+  a {
+    @media (hover: hover) {
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
 }
 
 .py {

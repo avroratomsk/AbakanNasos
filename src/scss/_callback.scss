@@ -10,13 +10,30 @@
     top: -80%;
     left: -20%;
     z-index: 0;
+
+    @media screen and (max-width: 992px) {
+      top: -30%;
+    }
+    @media screen and (max-width: 768px) {
+      left: -63%;
+    }
+
   }
 
   &__row {
+    position: relative;
     display: flex;
     gap: 134px;
     height: 100%;
+    z-index: 3;
 
+    @media screen and (max-width: 1300px) {
+      gap: 40px;
+    }
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
   }
 
   &__info {
@@ -31,24 +48,40 @@
     h2 {
       font-size: 40px;
       font-weight: 700;
-      margin-bottom: 20px;
+
+      @media screen and (min-width: 992px) {
+        margin-bottom: 20px;
+      }
     }
 
     p {
-      margin-bottom: 107px;
+      @media screen and (min-width: 992px) {
+        margin-bottom: 107px;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      display: contents;
     }
 
   }
 
   &__logo {
     justify-self: flex-end;
+
+    @media screen and (max-width: 992px) {
+      order: 4;
+    }
   }
 
   &__form {
-    min-width: 622px;
     flex: 1 1 50%;
     position: relative;
     z-index: 1;
+
+    @media screen and (min-width: 1200px) {
+      min-width: 622px;
+    }
   }
 
 
