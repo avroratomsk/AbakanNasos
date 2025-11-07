@@ -7463,8 +7463,27 @@ body main {
     font-size: 25px;
   }
 
+  .hero__arrow-next,
+  .hero__arrow-prev {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    color: #003252;
+  }
+
   .callback__pattern {
     left: -63%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__arrows {
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -7516,6 +7535,12 @@ body main {
 @media screen and (max-width: 578px) {
   .form-search__input {
     display: none;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .hero__btn {
+    width: 100%;
   }
 }
 
@@ -7588,6 +7613,10 @@ body main {
 
   .footer__nav-list li a:hover {
     text-decoration: underline;
+  }
+
+  .footer__link:hover {
+    color: rgb(255, 255, 255);
   }
 
   button:hover {
